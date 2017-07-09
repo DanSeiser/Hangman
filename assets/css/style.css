@@ -1,0 +1,57 @@
+body{
+	font-family: 'MedievalSharp', cursive;
+	background-image: url('../images/paper-manuscript.jpg');
+	background-repeat: repeat;
+	font-size: 2em;
+}
+
+p:first-child:first-letter {
+  color: #903;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+.intro{
+	font-weight: bold;
+}
+
+
+#gamecontent {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+#winscore, #losescore, #lives{
+	display: inline;
+}
+.scorecontainer, .remainingLives{
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+.letterplace{
+	border-bottom: 4px solid black;
+	margin-left: 10px; 
+	margin-right: 10px;
+	margin-top: 8px;
+	font-size: x-large;
+	width: 40px;
+	display: inline-block;
+	text-align: center;
+	height: 40px;
+	line-height:2em;
+}
+
+#img-6, #img-5, #img-4, #img-3, #img-2, #img-1{
+	display: none;
+}
+
+#gameOver{
+	font-weight: bold;
+	font-size: x-large;
+}
