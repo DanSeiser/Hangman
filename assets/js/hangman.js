@@ -43,7 +43,7 @@ function gameStart(){
 		if(selectedWord[i] != ' '){
 			wordHTML += '<div class="letterplace" id="letter_' + i + '">&nbsp;</div>';  
 		}else{
-			wordHTML += '</div></div></div class="row"><div classs="col-sm-12 text-center">'
+			wordHTML += '<div class="letterplace hidden" id="letter_'+i+'"> </div></div></div></div class="row"><div classs="col-sm-12 text-center">'
 		}
 	}
 	wordHTML += '</div></div>';
@@ -72,6 +72,8 @@ function gameTurn(keyPress){
 			}
 			testWord += $('#letter_'+i).html();
 		}
+
+
 		if(testWord == selectedWord){
 			gameEnd('win');
 		}
